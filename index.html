@@ -55,7 +55,7 @@ BEM - Block element modifier
                 <span class="heading-primary--sub">is where life happens</span>
             </h1>
             <!-- block modifier -->
-            <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+            <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
         </div>
     </header>
     <!-- 
@@ -214,7 +214,7 @@ BEM - Block element modifier
             </div>
         </section>
 
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Most popular tours
@@ -249,7 +249,7 @@ BEM - Block element modifier
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$297</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -285,7 +285,7 @@ BEM - Block element modifier
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$497</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now!</a>
+                                    <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -320,7 +320,7 @@ BEM - Block element modifier
                                             <p class="card__price-only">Only</p>
                                             <p class="card__price-value">$897</p>
                                         </div>
-                                        <a href="#" class="btn btn--white">Book now!</a>
+                                        <a href="#popup" class="btn btn--white">Book now!</a>
                                     </div>
                                 </div>
                             </div>
@@ -468,14 +468,39 @@ BEM - Block element modifier
                         voluptatibus magnam.
                     </p>
 
-
                 </div>
             </div>
-
         </footer>
 
+        <div class="popup" id="popup">
+            <div class="popup__content">
 
+                <div class="popup__left">
+                    <img src="/img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                    <img src="/img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                </div>
 
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                        Important &ndash; Please read these terms before booking
+                    </h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iusto odit, labore ipsam
+                        tenetur nulla libero facere aliquam modi animi, et est natus asperiores sequi.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores atque cupiditate soluta,
+                        corrupti vero incidunt asperiores rerum, architecto recusandae repellendus cum commodi ducimus
+                        inventore fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vitae nesciunt qui
+                        vero adipisci cumque sed nihil aliquid laudantium quas corrupti, voluptatibus perspiciatis
+                        fugiat deserunt,
+                        eaque error minus temporibus sunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </p>
+                    <a href="&" class="btn btn--green">Book now</a>
+                </div>
+
+            </div>
+        </div>
 
     </main>
 
