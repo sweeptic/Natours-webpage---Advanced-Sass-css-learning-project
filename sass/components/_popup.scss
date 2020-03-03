@@ -5,12 +5,18 @@
     height: 100vh;
     left: 0;
     top: 0;
-    background-color: rgba($color-black, .8);
+    background-color: rgba($color-black, .3);
     position: fixed;
     // display: none;
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
+
+    @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-black, .3);
+    }
 
     &:target {
         opacity: 1;
