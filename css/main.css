@@ -1,3 +1,12 @@
+/*
+0 - 600px:          phone
+600 - 900px:        tablet prtrait
+900-1200px:         tablet landscape
+[1200-1800px]:      normal
+1800px + :          big desktop
+
+1em = 16px
+*/
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -14,7 +23,6 @@
             transform: translate(0);
   }
 }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -103,6 +111,24 @@
 
 html {
   font-size: 62.5%;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 body {
@@ -776,7 +802,7 @@ body {
   line-height: 1;
 }
 
-.popup__close :hover {
+.popup__close:hover {
   color: #55c57a;
 }
 

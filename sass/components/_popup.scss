@@ -20,7 +20,7 @@
     //open states
     &:target &__content {
         opacity: 1;
-     transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
     }
 
     &__close {
@@ -38,7 +38,7 @@
             line-height: 1;
         }
 
-        :hover {
+        &:hover {
             color: $color-primary;
         }
     }
